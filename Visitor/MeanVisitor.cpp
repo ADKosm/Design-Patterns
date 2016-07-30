@@ -3,6 +3,8 @@
 //
 
 #include "MeanVisitor.h"
+#include "CharElement.h"
+#include "NumberElement.h"
 
 MeanVisitor::~MeanVisitor() {
 }

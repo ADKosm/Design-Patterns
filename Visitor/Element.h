@@ -5,18 +5,16 @@
 #ifndef VISITOR_ELEMENT_H
 #define VISITOR_ELEMENT_H
 
-#include "Visitor.h"
-
 class Visitor;
 
 class Element {
 public:
-    virtual ~Element() {}
+    virtual ~Element();
 
     virtual void Accept(Visitor * v) = 0;
 
 protected:
-    Element(){}
+    Element();
 };
 
 

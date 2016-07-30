@@ -3,6 +3,7 @@
 //
 
 #include "NumberElement.h"
+#include "Visitor.h"
 
 NumberElement::NumberElement(int n) : data(n) {
 }

@@ -3,6 +3,8 @@
 //
 
 #include "LetterStatisticVisitor.h"
+#include "CharElement.h"
+#include "NumberElement.h"
 
 LetterStatisticVisitor::~LetterStatisticVisitor() {
 }

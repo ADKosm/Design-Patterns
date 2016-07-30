@@ -5,12 +5,16 @@
 #ifndef VISITOR_VISITOR_H
 #define VISITOR_VISITOR_H
 
-#include "CharElement.h"
-#include "NumberElement.h"
+//#include "CharElement.h"
+//#include "NumberElement.h"
+
+class Element;
+class CharElement;
+class NumberElement;
 
 class Visitor {
 public:
-    virtual ~Visitor() {}
+    virtual ~Visitor();
 
     virtual void VisitChar(CharElement * e) =0 ;
 
@@ -19,7 +23,7 @@ public:
     virtual void Clear() = 0;
 
 protected:
-    Visitor() {}
+    Visitor();
 };
 
 

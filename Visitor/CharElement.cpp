@@ -3,6 +3,7 @@
 //
 
 #include "CharElement.h"
+#include "Visitor.h"
 
 CharElement::CharElement(char c) : data(c) {
 }
@@ -17,4 +18,5 @@ char CharElement::GetChar() {
 void CharElement::Accept(Visitor *v) {
     v->VisitChar(this);
 }
+
 
